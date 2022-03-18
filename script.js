@@ -31,7 +31,7 @@ const winningConditions = [ // according to the data cell index numbers
 ];
 function ResultValidation() {
     let roundWon = false
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i <= 7; i++) {
         const winCondition = winningConditions[i] // we got a condition and checked whether everything is correct  
         let a = gameState[winCondition[0]]
         let b = gameState[winCondition[1]]
